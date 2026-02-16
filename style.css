@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#info{
+    height: 500px;
+    width: 400px;
+    margin-left: 490px;
+    border: 1px solid black;
+    margin-top: 50px;
+}
+.header{
+    height: 10%;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkgray;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+.container input{
+    height: 50px;
+    width: 300px;
+    margin-left: 30px;
+    padding-left: 30px;
+    font-size: 15px;
+}
+#submit{
+    height: 50px;
+    width: 200px;
+    background-color: #8BC642;
+    color: white;
+    font-size: 20px;
+    margin-left: 90px;
+}
+.details{
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#card-front{
+    height: 600px;
+    width: 400px;
+    border: 1px solid black;
+    margin-left: 490px;
+    margin-top: 190px;
+}
+.upper-line{
+    height: 15px;
+    width: 100%;
+    background-color: #0973B8;
+}
+.smit{
+    height: 150px;
+    width: 200px;
+    margin-left: 100px;
+}
+.fullform{
+    height: 60px;
+    width: 250px;
+    border: 2px solid #8BC642;
+    margin-left: 75px;
+    background-color: whitesmoke;
+    position: relative;
+    bottom: 20px;
+}
+.fullform h3{
+    color: #0973B8;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    font-weight: bolder;
+}
+#img{
+    height: 120px;
+    width: 120px;
+    border: 5px solid #8BC642;
+margin-left: 135px;
+
+}
+#name2{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-weight: 500;
+}
+#course2{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+#roll{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+.lower-line{
+    height: 15px;
+    width: 100%;
+    background-color: #8BC642;
+    margin-top: 30px;
+}
+#card-back{
+    height: 600px;
+    width: 400px;
+    border: 1px solid black;
+    margin-left: 490px;
+    margin-top: 190px;
+}
+.details2{
+    margin-left: 20px;
+    margin-top: 30px;
+display: flex;
+gap: 8px;
+}
+.details2 h3{
+    text-decoration: underline;
+}
+#qr{
+    height: 145px;
+    width: 145px;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+.note{
+margin-top: 20px;
+margin-left: 25px;
+}
+.note2{
+
+margin-left: 70px;
+}
+.line{
+    margin-top: 40px;
+    margin-left: 120px;
+}
+.issue{
+      margin-left: 140px;
+}
+.lower-line2{
+    height: 15px;
+    width: 100%;
+    background-color: #8BC642;
+    margin-top: 37px;
+}
+#card-full {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+<body>
+<div id="info">
+    <div class="header">
+       <h1 class="gen">SMIT Card Generator</h1>
+    </div>
+    <div class="container">
+        <span class="details" ><input type="text" id="name" placeholder="Enter Your Name.." ></span>
+        <span class="details" > <input type="text" id="father" placeholder="Enter Your Father Name.."></span>
+        <span class="details" > <input type="text" id="cnic" placeholder="Enter Your CNIC Number.."></span>
+ 
+        <span class="details" > <input type="text" id="course" placeholder="Enter Your Course Name.."></span>
+        <span class="details" ><h3>Image:</h3> <input type="file" id="profile" accept="image/*"></span>
+        <button id="submit" onclick="submition()">Submit</button>
+        <h1 id="output"></h1>
+    </div>
+</div>
+<div id="card-full">
+<div id="card-front">
+    <div class="upper-line"></div>
+    <img src="./assets/df812e210053451.Y3JvcCwxNTAwLDExNzMsMCwxNjM.png" alt="" class="smit">
+    <div class="fullform">
+        <h3>SAYLANI MASS IT</h3>
+        <h3>TRAINING PROGRAM</h3>
+    </div>
+        <img id="img" >
+    <h1 id="name2"></h1>
+    <h2 id="course2"></h2>
+    <h1 id="roll"></h1>
+      <div class="lower-line"></div>
+</div>
+<div id="card-back">
+     <div class="upper-line"></div>
+     <div class="details2"><h3>Name:</h3><h3 id="name3"></h3></div>
+     <div class="details2"><h3>Father Name:</h3><h3 id="fatherName3"></h3></div>
+     <div class="details2"><h3>CNIC:</h3><h3 id="cnic2"></h3></div>
+     <div class="details2"><h3>Course:</h3><h3 id="course3"></h3></div>
+     <img src="./assets/qrcode_www.saylanimit.com.png" id="qr">
+     <h3 class="note">Note: This card is for SMIT premises only.</h3>
+     <h3 class="note2">If found please return to SMIT</h3>
+     <h3 class="line">-------------------------</h3>
+     <h4 class="issue">Issuing authority</h4>
+      <div class="lower-line2"></div>
+</div>
+</div>
+</body>
+    <script src="web.js"></script>
+</html>
