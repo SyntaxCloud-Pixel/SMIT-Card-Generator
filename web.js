@@ -10,6 +10,17 @@ function submition(){
     let roll2 = "WMA" + (Math.floor(Math.random() * 9000) + 1000)
     let roll = document.getElementById("roll")
     roll.innerText = roll2
+    if (name.value === "secret"){
+    alert("This code belongs to syed muhammad")
+    document.getElementById("name2").innerText = "YOU STOLE THE CODE";
+    document.getElementById("course2").innerText = "";
+    document.getElementById("roll").innerText = "";
+    document.getElementById("name3").innerText = "YOU STOLE THE CODE";
+    document.getElementById("fatherName3").innerText = "";
+    document.getElementById("cnic2").innerText = "";
+    document.getElementById("course3").innerText = "";
+    document.getElementById("img").src = "";
+}
  let img = document.getElementById("img")
 let profile = document.getElementById("profile")
 if (profile && profile.files[0]) {
@@ -30,7 +41,4 @@ course3.innerText = course.value + " " + "(Batch 18)"
         link.href = canvas.toDataURL();    
         link.click();                        
     });
-}
-function verification(){
-    alert("This code Belongs to Syed Muhammad!")
 }

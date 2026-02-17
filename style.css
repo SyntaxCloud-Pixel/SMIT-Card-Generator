@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 #info{
-    height: 550px;
+    height: 500px;
     width: 400px;
     margin-left: 490px;
     border: 1px solid black;
@@ -155,14 +155,4 @@ margin-left: 70px;
     position: absolute;
     top: -9999px;
     left: -9999px;
-}
-.verify{
-    height: 50px;
-    width: 200px;
-    background-color: #8BC642;
-    color: white;
-    font-size: 20px;
-    margin-left: 90px;
-    margin-top: 10px;
-       border-radius: 10px;
 }
