@@ -4,11 +4,13 @@
     box-sizing: border-box;
 }
 #info{
-    height: 500px;
+    height: 550px;
     width: 400px;
     margin-left: 490px;
     border: 1px solid black;
     margin-top: 50px;
+       border-radius: 10px;
+       background-color: whitesmoke;
 }
 .header{
     height: 10%;
@@ -24,11 +26,13 @@
     margin-left: 30px;
     padding-left: 30px;
     font-size: 15px;
+    border-radius: 10px;
 }
 #submit{
     height: 50px;
     width: 200px;
     background-color: #8BC642;
+       border-radius: 10px;
     color: white;
     font-size: 20px;
     margin-left: 90px;
@@ -151,4 +155,14 @@ margin-left: 70px;
     position: absolute;
     top: -9999px;
     left: -9999px;
+}
+.verify{
+    height: 50px;
+    width: 200px;
+    background-color: #8BC642;
+    color: white;
+    font-size: 20px;
+    margin-left: 90px;
+    margin-top: 10px;
+       border-radius: 10px;
 }

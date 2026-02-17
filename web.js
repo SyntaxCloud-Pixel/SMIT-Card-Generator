@@ -3,7 +3,6 @@ function submition(){
     let  fatherName = document.getElementById("father")
     let  cnic = document.getElementById("cnic")
     let  course = document.getElementById("course")
-    let output = document.getElementById("output")
     let name2 = document.getElementById("name2")
     name2.innerText = name.value
     let course2 = document.getElementById("course2")
@@ -31,4 +30,7 @@ course3.innerText = course.value + " " + "(Batch 18)"
         link.href = canvas.toDataURL();    
         link.click();                        
     });
+}
+function verification(){
+    alert("This code Belongs to Syed Muhammad!")
 }
