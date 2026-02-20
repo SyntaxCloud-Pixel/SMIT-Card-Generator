@@ -5,7 +5,7 @@ function submition() {
     let course = document.getElementById("course")
     let name2 = document.getElementById("name2")
  
-    if ( name.value === "" || fatherName.value === "" || cnic.value === "" || course.value === "" || age === "" ) {
+    if ( name.value === "" || fatherName.value === "" || cnic.value === "" || course.value === "") {
   alert("Please fill all the fields!");
   return;
 }
@@ -13,7 +13,7 @@ function submition() {
     name2.innerText = name.value
     let course2 = document.getElementById("course2")
     course2.innerText = course.value
-    let roll2 = "WMA" + (Math.floor(Math.random() * 9000) + 1000)
+    let roll2 = "WMA" + (Math.round(Math.random() * 9000) + 1000)
     let roll = document.getElementById("roll")
     roll.innerText = roll2
     if (name.value === "secret") {
@@ -41,15 +41,21 @@ function submition() {
     let course3 = document.getElementById("course3")
     course3.innerText = course.value + " " + "(Batch 18)"
     html2canvas(document.getElementById("card-full")).then(canvas => {
-        let link = document.createElement("a");
-        let userName = document.getElementById("name").value.trim().replace(/\s+/g, "_");
-        link.download = `${userName}_CARD.png`;
-        link.href = canvas.toDataURL("image/png");
-        link.click(); document.getElementById("name").value = "";
-        document.getElementById("father").value = "";
-        document.getElementById("cnic").value = "";
-        document.getElementById("course").value = "";
-        document.getElementById("profile").value = "";
 
+    const { jsPDF } = window.jspdf;
+
+    let imgData = canvas.toDataURL("image/png");
+
+    let pdf = new jsPDF({
+        orientation: "portrait",
+        unit: "px",
+        format: [canvas.width, canvas.height]
     });
+
+    pdf.addImage(imgData, "PNG", 0, 0, canvas.width, canvas.height);
+
+    let userName = document.getElementById("name").value.trim().replace(/\s+/g, "_");
+
+    pdf.save(`${userName}_CARD.pdf`);
+});
 }
